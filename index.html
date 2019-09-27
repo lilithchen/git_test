@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/loginPage.js" type="text/javascript" charset="utf-8"></script>
+<!-- 	<link rel="stylesheet" type="text/css" href="/storage/emulated/0/Download/loginPage/index.css"/>
+ -->
+</head>
+<body>
+	<div id="main">
+		<h1>LOGIN AND REGISTRATION</h1>
+	<!--內容==================-->
+		<div class="content">
+	<!--登入區==================-->
+			<div class="log-in">
+	<!--表頭==================-->
+				<div class="log-head">
+	<!--彈出式表單==================-->
+					<div id="log-pad-block">
+						<!--register表單內容========-->
+						<div id="log-pad"><span>+</span></div>
+						<div id="log-pad-plus">
+							<div id="registerHead">
+								<!-- <div id="register-log-pad">+</div> -->
+								<h2>REGISTER</h2>
+							</div>
+							<div class="registerBlock">
+								<form>
+								<div class="registerTop">
+									<input id="reName" type="text" name="name" placeholder="Your Name"/>
+									<input id="reMail" type="text" name="registerEmail" placeholder="Email"/>
+									<input id="rePhone" type="text" name="phone" placeholder="Phone"/>
+									<input id="rePassword" type="password" name="registerPassword" placeholder="Password"/>
+
+									<input id="reRememberMe" type="checkbox" name="reRememberMe"/>
+									<label for="reRememberMe"> Remember Me</label>
+								</div>
+								<ul class="reInputPadBottom">
+									<li id="reInputPadB"><input type="submit" name="login" value="SIGN UP" id="reSubmitBottom"></li>
+									<li id="reInputPadA"><a href="#">Forgot password?</a></li>
+								</ul>
+								</form>
+							</div>
+						</div>
+					</div>
+					<h2>LOGIN</h2>
+				</div>
+	<!---表單==================-->
+				<div class="log-top">
+					<form>
+						<div class="inputPadTop">
+							<input id="email" type="text" name="email" placeholder="Email"/>
+							<input id="password" type="password" name="password" placeholder="Password"/>
+							
+							<input id="rememberMe" type="checkbox" name="rememberMe"/>
+							<label for="rememberMe"> Remember Me</label>
+						</div>
+						<ul class="inputPadBottom">
+							<li id="inputPadB"><input type="submit" name="login" value="LOGIN" id="submitBottom"></li>
+							<li id="inputPadA"><a href="#">Forgot password?</a></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			
+	<!--外站登入==================-->
+			<div>
+				<ul>
+					<li class="linkFb">
+					<a href="https://www.facebook.com/">
+						<span class="iconFb"></span>
+						<span class="iconNames">FaceBook</span>
+					</a>
+					</li>
+					<li class="linkTr">
+					<a href="#">
+						<span class="iconTr"></span>
+						<span class="iconNames">Twitter</span>
+					</a>
+					</li>
+					<li class="linkGl">
+					<a href="#">
+						<span class="iconGl"></span>
+						<span class="iconNames">Google+</span>
+					</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	© 2016 Catchy Login and Registration . All Rights Reserved | Design by W3layouts
+	</div>
+</body>
+</html>

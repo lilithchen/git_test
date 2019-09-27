@@ -1,0 +1,368 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color:#0b648f;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Baloo Chettan', cursive;
+}
+#main{
+	width:100%;
+}
+h1,h2{
+	color:#FFFFFF;
+	text-align:center;
+}
+h1{
+	margin:0px;
+	padding:163px 0px 30px 0px;
+}
+h2{
+	padding-top: 5px;
+}
+#registerHead>h2{
+	font-size: 20px;
+}
+/*------內容區塊------*/
+.content{
+	width:37%;
+	/*max-width:80%;*/
+	margin:auto;
+	background-color:#FFFFFF;
+}
+/*------紅色那塊------*/
+.log-head{
+	padding: 75px 0px 2px;
+	background-color:#ea4c89;
+	position: relative;
+	/*text-align:center;*/
+}
+/*------圓形------*/
+#log-pad{
+	position: relative;
+	/*top: 12px;*/
+	width: 60px;
+	height: 60px;
+/*	border-radius: 32px;
+	background-color: #2E4A84;
+	box-shadow: #333333 1px 2px 3px;*/
+	margin: auto;
+	font-size: 26px;
+	text-align: center;
+	line-height: 60px;
+	color: #FFFFFF;
+	cursor: pointer;
+	 -webkit-transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#log-pad span{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	-webkit-transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#log-pad-block.action #log-pad span{
+	-webkit-transform:rotate(585deg);
+	-ms-transform:rotate(585deg);
+	-moz-transform:rotate(585deg);
+	transform: rotate(585deg);
+}
+#log-pad-block.action #log-pad{
+	box-shadow: none;
+	background-color: transparent;
+	-webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	z-index: +999;
+}
+/*------register彈出式表單------*/
+#log-pad-block{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 5px;
+	left: 50%;
+	margin-left:-30px;
+	/*display: inline-block;*/
+	/*text-align: center;*/
+	border-radius: 32px;
+	background-color: #2E4A84;
+	box-shadow: #333333 1px 2px 3px;
+	-webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#log-pad-block.action{
+	width: 80%;
+	left: 10%;
+	margin-left: 0;
+	/*height: 650px;*/
+	box-shadow: none;
+	border-radius: 0px;
+	-webkit-transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#log-pad-block.action #log-pad-plus{
+	display: block;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s;
+	transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s;
+}
+#log-pad-plus{
+	display: none;
+	width: 100%;
+	top: 0px;
+	background-color: #FFFFFF;
+	position: absolute;
+	/*left: 30%;
+	top: 230px;*/
+	box-shadow: rgba(60, 60, 60, 0.6) 0px 6px 15px;
+	-webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s 0.2s;
+	transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s 0.2s;
+}
+
+#registerHead{
+	padding-top: 60px;
+	position: relative;
+	background-color: #2E4A84;
+	height: 65px;
+}
+.registerBlock{
+	width: 100%;
+	padding-top: 30px;
+	background-color: #FFFFFF;
+}
+.registerTop input{
+	width:90%;
+	line-height:190%;
+	margin:40px auto;
+	padding: 5px 0px 5px 40px;
+	box-sizing: border-box;
+	display: block;
+	border:none;
+	border-bottom:solid 2px #666;
+	font-size: 1em;
+	color: #999999;
+}
+#reName{
+	background:url(image/name.png) 5px center no-repeat;
+}
+#reMail{
+	background:url(image/email.png) 5px center no-repeat;
+}
+#rePhone{
+	background:url(image/phone.png) 5px center no-repeat;
+}
+#rePassword{
+	background:url(image/lock.png) 5px center no-repeat;
+}
+#reName:focus,#reMail:focus,#rePhone:focus,#rePassword:focus{
+	border-bottom:dashed 2px #666;
+	outline: none;
+}
+#reRememberMe{
+	width: 25px;
+	height: 25px;
+	margin: 5px 0px 5px 23px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.reInputPadBottom::after{
+	display:block;
+	width:90%;
+}
+#reInputPadA{
+	margin-left:5%;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	height: 40px;
+}
+#reInputPadA a:link{
+	color: #555555;
+	font-size: 1em;
+	text-decoration:none;
+	line-height: 40px;
+}
+#reInputPadA a:visited{
+	color: #555555;
+}
+#reInputPadB{
+	float:right;
+	margin-right:5%;
+}
+#reSubmitBottom{
+	width: 100px;
+	height: 40px;
+	background-color: #EFC509;
+	color: #FFFFFF;
+	font-size: 1em;
+	border: none;
+}
+
+ul, li{
+	list-style: none; margin:0px; padding:0px;
+}
+
+/*------input表單區------*/
+.inputPadTop{
+	border: none;
+}
+#email,#password{
+	width:90%;
+	line-height:140%;
+	margin:40px auto 30px;
+	padding: 5px 0px 5px 40px;
+	box-sizing: border-box;
+	border:none;
+	border-bottom:solid 2px #666;
+	display: block;
+	/*display讓下方元素不會上移,也可以用左右外邊界5%填滿*/
+	font-size: 1em;
+	color: #999999;
+}
+#email:focus,#password:focus{
+	border-bottom:dashed 2px #666;
+	outline: none;
+}
+#email{
+	background:url(image/email.png) 5px center no-repeat;
+}
+#password{
+	background:url(image/lock.png) 5px center no-repeat;
+}
+
+#rememberMe{
+	width: 25px;
+	height: 25px;
+	margin-left: 21px;
+	vertical-align: middle;
+}
+label{
+	vertical-align: middle;
+	color: #999999;
+}
+.inputPadBottom::after{
+	display:block;
+	width:90%;
+}
+#inputPadA{
+	margin-left:5%;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	height: 40px;
+}
+#inputPadA a:link{
+	color: #555555;
+	font-size: 1em;
+	text-decoration:none;
+	line-height: 40px;
+}
+#inputPadA a:visited{
+	color: #555555;
+}
+
+#inputPadB{
+	float:right;
+	margin-right:5%;
+}
+#submitBottom{
+	width: 100px;
+	height: 40px;
+	background-color: #EFC509;
+	color: #FFFFFF;
+	font-size: 1em;
+	border: none;
+}
+
+/*------以下外站登入------*/
+.linkFb, .linkTr, .linkGl{
+	line-height:60px;
+}
+.linkFb{
+	background-color:#3b5998;
+}
+.linkTr{
+	background-color:#55acee;
+}
+.linkGl{
+	background-color:#dc4e41;
+}
+
+.iconFb, .iconTr, .iconGl{
+	width:70px;
+	height: 60px;
+	margin-right: 15px;
+	float:left;
+}
+.iconFb{
+	background: url(image/i1.png) #2E4A84 no-repeat center;
+}
+.linkFb:hover .iconFb{
+	-ms-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	transition: all 0.5s;
+}
+.iconTr{
+	background: url(image/i2.png) #4D9CD8 no-repeat center;
+}
+.linkTr:hover .iconTr{
+	-ms-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	transition: all 0.5s;
+}
+.iconGl{
+	background: url(image/i3.png) #D64639 no-repeat center;
+}
+.linkGl:hover .iconGl{
+	-ms-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	transition: all 0.5s;
+}
+
+.linkFb a:link, .linkTr a:link, .linkGl a:link{
+	text-decoration:none;
+	color:#ffffff;
+}
+.linkFb a:visited, .linkTr a:visited, .linkGl a:visited{
+	color: #ffffff;
+}
+.iconNames{
+	width:auto;
+	font-size:1em;
+	vertical-align: middle;
+	display: block;
+}
+
+/*------footer------*/
+#footer{
+	height: 60px;
+	padding-top: 50px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+.content {
+	width: 90%;
+}
+
+
+}
